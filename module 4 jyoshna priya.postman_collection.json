@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "295318ab-fab9-4772-b1a1-3d9e7af43e75",
+		"name": "module 4 jyoshna priya",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23843479"
+	},
+	"item": [
+		{
+			"name": "Sample post req",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"id\": 1,\n        \"customerName\": \"Anthony\",\n        \"phoneNumber\": \"5820827392 \",\n        \"address\": \"716 Cathy Ct Elmont, New York(NY), 11003\",\n        \"loanAmount\": \"200\",\n        \"interest\": \"15\",\n        \"loanTermYears\": \"30\",\n        \"loanType\": \"Personal Loan\",\n        \"description\": \"Monthly expense\"\n      },\n      {\n        \"id\": 2,\n        \"customerName\": \"Jyoshna\",\n        \"phoneNumber\": \"6715824628\",\n        \"address\": \"724520 S 490th Rd Tahlequah, Oklahoma(OK), 74464\",\n        \"loanAmount\": \"3000\",\n        \"interest\": \"5\",\n        \"loanTermYears\": \"3\",\n        \"loantype\": \"Education Loan\",\n        \"description\": \"Loan to pursue Master's\"\n      },\n      {\n        \"id\": 3,\n        \"customerName\": \"Vicky\",\n        \"phoneNumber\": \"6410715981\",\n        \"address\": \"1250 S John Ave Springfield, Missouri(MO), 65804\",\n        \"loanAmount\": \"9000\",\n        \"interest\": \"2\",\n        \"loanTermYears\": \"7\",\n        \"loanType\": \"Car loan\",\n        \"description\": \"Loan to buy luxury car\"\n      },\n      {\n        \"id\": 4,\n        \"customerName\": \"George\",\n        \"phoneNumber\": \"7174156848\",\n        \"address\": \"3780 Butler Springs Dr Loganville, Georgia(GA), 30052\",\n        \"loanAmount\": \"3000\",\n        \"interest\": \"9\",\n        \"loanTermYears\": \"2\",\n        \"loanType\": \"Personal Loan\",\n        \"description\": \"Loan for personal expenses.\"\n      },\n      {\n      \"id\": 5,\n      \"customerName\": \"jp\",\n      \"phoneNumber\": \"76196978902\",\n      \"address\": \"743 Three IN st, Tempe, 25281\",\n      \"loanAmount\": \"250\",\n      \"interest\": \"5\",\n      \"loanTermYears\": \"1\",\n      \"loanType\": \"Personal Loan\",\n      \"description\": \"Loan for personal expenses.\"\n    }\n]\n\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/loans",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"loans"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update 5 loans",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"id\": 1,\n        \"customerName\": \"Anthony\",\n        \"phoneNumber\": 5820827392 ,\n        \"address\": \"716 Cathy Ct Elmont, New York(NY), 11003\",\n        \"loanAmount\": 200,\n        \"interest\": 15,\n        \"loanTermYears\": 30,\n        \"loanType\": \"PersonalLoan\",\n        \"description\": \"Monthly expense\"\n      },\n      {\n        \"id\": 2,\n        \"customerName\": \"Jyoshna\",\n        \"phoneNumber\": 6715824628,\n        \"address\": \"724520 S 490th Rd Tahlequah, Oklahoma(OK), 74464\",\n        \"loanAmount\": 3000,\n        \"interest\": 5,\n        \"loanTermYears\": 3,\n        \"loantype\": \"EducationLoan\",\n        \"description\": \"Loan to pursue Master's\"\n      },\n      {\n        \"id\": 3,\n        \"customerName\": \"Vicky\",\n        \"phoneNumber\": 6410715981,\n        \"address\": \"1250 S John Ave Springfield, Missouri(MO), 65804\",\n        \"loanAmount\": 9000,\n        \"interest\": 2,\n        \"loanTermYears\": 7,\n        \"loanType\": \"Carloan\",\n        \"description\": \"Loan to buy luxury car\"\n      },\n      {\n        \"id\": 4,\n        \"customerName\": \"George\",\n        \"phoneNumber\": 7174156848,\n        \"address\": \"3780 Butler Springs Dr Loganville, Georgia(GA), 30052\",\n        \"loanAmount\": 3000,\n        \"interest\": 9,\n        \"loanTermYears\": 2,\n        \"loanType\": \"Personal Loan\",\n        \"description\": \"Loan for personal expenses.\"\n      },\n      {\n      \"id\": 5,\n      \"customerName\": \"jp\",\n      \"phoneNumber\": 76196978902,\n      \"address\": \"743 Three IN st, Tempe, 25281\",\n      \"loanAmount\": 250,\n      \"interest\": 5,\n      \"loanTermYears\": 1,\n      \"loanType\": \"PersonalLoan\",\n      \"description\": \"Loan for personal expenses.\"\n    }\n]\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/loans",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"loans"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all values",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"customerName\": \"Anthony Davis\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/loans/635534f93d11094a361daee7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"loans",
+						"635534f93d11094a361daee7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/loans/635534f93d11094a361daee7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"loans",
+						"635534f93d11094a361daee7"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
